@@ -1,3 +1,20 @@
+@font-face{
+    font-family: OpenSans;
+    src: url(../fonte/OpenSans-Light.ttf);
+    font-weight: lighter;
+}
+@font-face{
+    font-family: OpenSans;
+    src: url(../fonte/OpenSans-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonte/OpenSans-Bold.ttf);
+    font-weight: bold;
+}
+    
+
 .top {
     background-color: #252323;
     padding: 20px 0px;
@@ -11,4 +28,53 @@
     color: #c1c1c1;
     font-size: 21px;
     margin-right: 16px;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.menu li{
+    float: left;
+    text-align: start;
+    margin: 20px 35px 0px 0px;
+}
+
+.menu li a {
+    color: #252323;
+    text-decoration: none;
+    font-family: OpenSans;
+    font-weight: lighter;
+    font-size: 14px;
+}
+.menu li a:hover{
+    color: #00bac6;
+    border-bottom: 2px solid #00bac6;
+    padding-bottom: 18px;
+}
+
+header {
+    border-bottom: 2px solid #efefef;
+    padding-bottom: 17px;
+}
+
+.input {
+    border:none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.search {
+    width: fit-content;
+    border: 1px solid #d6d6d6;
+    padding: 0px 5px;
+    margin-top: 16px;
+    border-radius: 3px;
+    float: right;
+}
+.fa-search {
+    color: #b5b5b5;
 }
