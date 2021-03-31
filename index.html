@@ -4,6 +4,10 @@
         </title>
         <link rel="stylesheet" href="style/bootstrap.css">
         <link rel="stylesheet" href="style/stylesheet.css">
+        <link rel="stylesheet" href="style/owl.carousel.min.css">
+        <link rel="stylesheet" href="style/owl.theme.default.min.css">
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
         <script src="node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
         <script src="node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
         <script src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
@@ -60,5 +64,31 @@
                 </div>
             </div>
         </header>
+        
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div style="background-image: url(imagens/destaque_01.jpg);" class="destaque">
+                    <div class="preto">
+                        <div class="titulo">
+                            <h3>Welcome to our web site</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="item">
+                <div style="background-image: url(imagens/destaque_02.jpg);" class="destaque">
+                </div>    
+            </div>
+            <div class="item"><h4>3</h4></div>
+        </div>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                items:1
+            })
+        </script>
     </body>
 </html>
